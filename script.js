@@ -142,10 +142,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //text changing behaviour.
     const message = [
-        "! Welcome to the Recipe Book !",
-        "! Explore Delicious Recipes !",
-        "! Add Your Favorite Dishes !",
-        "! Search for New Ideas !"
+        "!Welcome to the Recipe Book!",
+        "!Explore Delicious Recipes!",
+        "!Add Your Favorite Dishes!",
+        "!Search for New Ideas!"
     ];
 
     let currentIdx = 0;
