@@ -11,11 +11,18 @@
         <div><h1 id="changing-text">! Welcome to the recipe book !</h1></div>
         <section id="add-recipe">
             <form id="recipe-form">
-                <input type="text" id="recipe-name" placeholder="Recipe Name" required style="font-family: Georgia, 'Times New Roman', serif;">
-                <textarea id="ingredients" placeholder="ingredients" required style="font-family: Georgia, 'Times New Roman', serif;"></textarea>
-                <textarea id="instructions" placeholder="praperation instruction" required style="font-family: Georgia, 'Times New Roman', serif;"></textarea>
-                <label for="img" id="lbl" class="custom-file-label"><h2 id="imgH2">Upload Recipe Image</h2></label>
-                <input id="img" type="file" capture="environment" accept="image/*" style="display: none;">
+                <input type="text" id="recipe-name" placeholder="   Recipe Name" required style="font-family: Georgia, 'Times New Roman', serif;">
+
+                <textarea id="ingredients" placeholder="   ingredients" required style="font-family: Georgia, 'Times New Roman', serif;"></textarea>
+
+                <textarea id="instructions" placeholder="   praperation instruction" required style="font-family: Georgia, 'Times New Roman', serif;"></textarea>
+
+                <label for="img" id="lbl" class="custom-file-label"><h2 id="imgH2">Upload From Files</h2></label>
+                <input id="img" type="file" accept="image/*" style="display: none;">
+
+                <label for="camera" id="lbl" class="custom-file-label"><h2 id="imgH2">Take a Photo</h2></label>
+                <input id="camera" type="file" accept="image/*" capture="camera" style="display: none;">
+                
                 <button id="addOne" type="submit">Add Recipe</button>
             </form>
         </section>

@@ -36,9 +36,10 @@ h2{
     color: #333;
 }
 form input {
-    width: 97%;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 0;
     margin: 10px 0;
+    /* margin-right:20px; */
     border-radius: 8px;
     border: 2px solid #ddd;
     transition-duration: 0.2s;
@@ -55,8 +56,8 @@ form input:focus {
 
 form textarea{
     resize: none;
-    width: 97%;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 0;
     margin: 10px 0;
     border-radius: 8px;
     border: 2px solid #ddd;
@@ -230,8 +231,8 @@ img {
 }
 
 #search-bar {
-    width: 97%;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 0;
     margin-top: 10px;
     border-radius: 8px;
     border: 1px solid #ddd;

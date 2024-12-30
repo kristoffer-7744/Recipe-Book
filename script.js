@@ -91,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
             h2.innerText = "! Image Selected !";
             h2.style.color = "white";
             label.style.backgroundColor = "#28a745";
-
         } 
     });
 
