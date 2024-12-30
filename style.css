@@ -1,0 +1,264 @@
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background:linear-gradient(to bottom, #fffbe6);
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff8e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3) ;
+}
+
+#changing-text {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    text-align: center;
+    margin: 30px auto;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@media (max-width: 500px) {
+    #changing-text{
+        font-size: 1rem;
+    }
+}
+
+h2{
+    color: #333;
+}
+form input {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition-duration: 0.2s;
+    background-color: #fff;
+}
+
+form input:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+form input:focus {
+    border-color: #17a2b8; /* Focus color */
+    box-shadow: 0 0 10px rgba(23, 162, 184, 0.4); /* Soft blue glow */
+}
+
+form textarea{
+    resize: none;
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition-duration: 0.2s;
+}
+
+
+textarea::-webkit-scrollbar {
+    width: 6px; 
+}
+textarea::-webkit-scrollbar-thumb {
+    background-color: #aaa9a9; 
+    border-radius: 4px; 
+}
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #746f6f; 
+}
+textarea::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+
+
+form textarea:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+form textarea:focus {
+    border-color: #17a2b8; 
+    box-shadow: 0 0 10px rgba(23, 162, 184, 0.4); 
+}
+
+label {
+    transition-duration:0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+label:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: auto;
+}
+
+form #addOne {
+    width: 100%;
+    padding: 10px;
+    background-color:  #28a745;
+    color:#fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', serif;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+form #addOne:hover {
+    background-color:#218838;
+}
+
+#recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y:auto;
+    background-color:  #fff8e1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+}
+
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+  
+
+.recipe-card p {
+    color: #555;
+    word-wrap: break-word;  
+    white-space: break-spaces;
+    text-overflow: ellipsis; 
+}
+.recipe-card::-webkit-scrollbar {
+    width: 5px; 
+    height: 8px; 
+}
+
+.recipe-card::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.recipe-card::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 8px;
+}
+
+.recipe-card::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+.custom-file-label {
+    display:inline-block;
+    padding:0 15px;
+    margin: 15px 0;
+    color: #000;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+img {
+    width: 100%;
+    height: 70%;    
+    border-radius: 4px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.recipe-card h3 {
+    color: #333;
+}
+.delBtn {
+    width: 100%;
+    height: 8%;
+    padding: 2px 2px;
+    margin: 0 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color:  #e74c3c;
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.3s;
+}
+.delBtn:hover {
+    background-color: #c0392b;
+    cursor: pointer;
+}
+
+#conformDel div {
+    font-size: 16px;
+}
+#yesBtn{
+    background-color: #28a745;
+    color: white;
+}
+#noBtn{
+    background-color: #dc3545;
+    color: white;
+}
+#yesBtn, #noBtn{
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.2s;
+}
+#yesBtn:hover,#noBtn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#search-bar {
+    width: 97%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    transition-duration: 0.2s ;
+}
+#search-bar:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+#search-bar:focus {
+    border-color: #17a2b8;
+    background-color: #fff;
+}
+
+/* you can delete it */
+
+.recipe-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+form #addOne:active, .delBtn:active {
+    transform: scale(0.98);
+    transition: transform 0.1s;
+}
+
+#yesBtn:active, #noBtn:active {
+    transform: scale(0.98);
+    transition: transform 0.1s;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" ref href="style.css">
+    <title>Recipe Book</title>
+</head>
+<body>
+    <div id="container">
+        <div><h1 id="changing-text">! Welcome to the recipe book !</h1></div>
+        <section id="add-recipe">
+            <form id="recipe-form">
+                <input type="text" id="recipe-name" placeholder="Recipe Name" required style="font-family: Georgia, 'Times New Roman', serif;">
+                <textarea id="ingredients" placeholder="ingredients" required style="font-family: Georgia, 'Times New Roman', serif;"></textarea>
+                <textarea id="instructions" placeholder="praperation instruction" required style="font-family: Georgia, 'Times New Roman', serif;"></textarea>
+                <label for="img" id="lbl" class="custom-file-label"><h2 id="imgH2">Upload Recipe Image</h2></label>
+                <input id="img" type="file" capture="environment" accept="image/*" style="display: none;">
+                <button id="addOne" type="submit">Add Recipe</button>
+            </form>
+        </section>
+        <section id="search-recipe">
+            <h2>Search Recipes</h2>
+            <input id="search-bar" type="text" placeholder="Search By Name Or Ingredients" style="font-family: Georgia, 'Times New Roman', serif;">
+        </section>
+        <section id="recipe-list">
+            <h2>Recipe List</h2>
+            <div id="recipes"></div>
+        </section>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
