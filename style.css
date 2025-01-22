@@ -130,11 +130,12 @@ form #addOne:hover {
     transition-duration: 0.3s;
 }
 
-
-.recipe-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
+@media (min-width:600px) {      
+    .recipe-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    }
   
 
 .recipe-card p {
@@ -247,11 +248,6 @@ img {
 }
 
 /* you can delete it */
-
-.recipe-card:hover img {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
 
 form #addOne:active, .delBtn:active {
     transform: scale(0.98);
